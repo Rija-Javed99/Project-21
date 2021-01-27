@@ -36,14 +36,13 @@ function draw() {
 
     if(block1.isTouching(ball) && ball.bounceOff(block1)){
         ball.shapeColor = rgb(0,0,255);
-        music.play();
+        //play music
     }
 
     if(block2.isTouching(ball)){
         ball.shapeColor = rgb(255,128,0);
-        ball.velocityX = 0;
-        ball.velocityY = 0;
-        music.stop();
+      
+        //stop music and stop balls movement
     }
 
     if(block3.isTouching(ball) && ball.bounceOff(block3)){
